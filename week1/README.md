@@ -3,7 +3,7 @@ Before you start the first TA session you should have installed Python 3, in par
 You should be able to use python 3.6 or 3.7 without issues as well if you prefer.
 You also need jupyter to view jupyter notebooks that contain the exercise descriptions.
 
-We recommend using [Anaconda](https://www.continuum.io/downloads) for an easy way to install Python 3.
+We recommend using [Anaconda](https://www.anaconda.com/distribution/) for an easy way to install Python 3.
 This should include or allow you to install all the Python libraries we use in the course including jupyter.
 
 You are of course welcome to just install python 3 whichever way you like and for instance use pip to install and manage packages.
