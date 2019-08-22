@@ -25,3 +25,4 @@ Take a look and try to make sense of it.
 
 [Coding Exercise](sklearn_intro.ipynb)
 
+To download the notebook files correctly, you can clone, or download all, or open the file in raw and save as.
