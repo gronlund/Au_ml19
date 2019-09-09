@@ -7,12 +7,13 @@ import urllib
 
 def load_data():
     """ Simple helper function for downloading and loading data """
+    print('loading data for nonlinear experiment')
     filename = 'nonlinear_data.npz'
     if not os.path.exists(filename):
-        print('file not exists - downloading')
+        filepath = 'https://github.com/gronlund/Au_ml19/raw/master/week4/nonlinear_data.npz'
+        print('file not exists - downloading:', filepath)
         with open(filename, 'wb') as fh:
-            path = "https://github.com/gronlund/Au_ml19/tree/master/week4/{0}".format(filename)
-            fh.write(urllib.request.urlopen(path).read())
+            fh.write(urllib.request.urlopen(filepath).read())
     D =  np.load(filename, allow_pickle=True)
     return D
 
@@ -223,12 +224,10 @@ def plot_square_transform():
     fig, axes = plt.subplots(1, 2, figsize=(12, 10))
     axes[0].scatter(X[:, 0], X[:, 1], c=y, cmap=plt.cm.Paired, s=20)
     axes[0].set_title('Data Set 1', fontsize=16)
-    axes[0].set_ylim([-0.05, 1.05])
     axes[1].scatter(Xt[:,1], Xt[:, 2], c=y, cmap=plt.cm.Paired, s=20)
     x, y = make_hyperplane(w_pla, axes[1])
     axes[1].plot(x, y, 'r--', linewidth=4)    
-    axes[1].set_title('Data Set 1 - transformed - Decision boundary', fontsize=16)
-    axes[1].set_ylim([-0.05, 1.05])
+    axes[1].set_title('Data Set 1 - Transformed - Decision boundary', fontsize=16)
     plt.show()
 
     
