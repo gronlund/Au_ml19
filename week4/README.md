@@ -7,5 +7,5 @@ The starter code is needed for the coding exercise.
 The suggested order is as follows.
 * [Theory Exercises](theory.ipynb)
 * [Coding Exercise](description_nonlinear.ipynb)
-* [Starter Code - Perceptron](code_nonlinear.py)
+* [Starter Code - Nonlinear Transforms](code_nonlinear.py)
 * [Data For Coding Exercise](nonlinear_data.npz)
