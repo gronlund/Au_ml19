@@ -4,3 +4,4 @@ The exercises for week 8 can be found below. Remember to look at all the exercis
 Now get started with the exercises (download the notebook to work with it).
 
 [Theory Exercises](theory.ipynb)
+[Starter Code Deep Learning](conv_cifar.ipynb)
