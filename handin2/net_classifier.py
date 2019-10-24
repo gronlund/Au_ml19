@@ -108,7 +108,7 @@ class NetClassifier():
             params: dict of params to use (if none use stored params)
 
         Returns:
-            np.array shape n, 1
+            float
         """
         if params is None:
             params = self.params
